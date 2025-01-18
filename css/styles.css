@@ -1,0 +1,162 @@
+
+body{
+  margin-top: 1rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+header{
+  padding: 5px;
+}
+
+header > img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+nav{
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px;
+  margin-bottom: 20px;
+  top: 0;
+  position: sticky;
+  min-width: 330px;
+}
+
+nav ul{
+  list-style: none;
+  text-align: center;
+}
+
+nav li{
+  display: inline-block;
+  font-size: 1rem;
+}
+
+nav li a{
+  color: black;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: rgba(68, 102, 83, 0.61);
+  text-decoration: underline;
+}
+
+section{
+  display: flex;
+}
+
+ article{
+  flex: 1;
+}
+
+footer{
+  display:flex;
+  padding-top: 5px;
+  border-style:dashed;
+  border-color: hsla(0, 0%, 0%, 0.082);
+  border-radius: 10px;
+}
+
+footer div{
+  flex: 1;
+}
+
+footer div img{
+  width: 10%;
+}
+
+.footer-right strong{
+  color:rgb(68, 102, 83);
+}
+
+.restaurant-banner{
+  background: linear-gradient(hsla(0, 0%, 0%, 0.651),rgba(68, 102, 83, 0.301)), url(../banner-picture.png) no-repeat center / cover;
+  box-shadow: 0px 0px 0px black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.restaurant-banner >p{
+  font-size: 1.2rem;
+}
+
+.discount-tag{
+  background-color: rgb(68, 102, 83);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 2% 2%;
+  float: inline-end;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.food-card{
+  margin-left: 5px ;
+  margin-right: 5px ;
+  padding: 10px;
+  width: fit-content;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px hsla(0, 0%, 0%, 0.13);
+}
+
+.food-picture{
+  display:inline-flex;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  animation: spin 20s linear infinite;
+}
+
+.food-name{
+  text-decoration: underline;
+}
+
+
+
+@keyframes spin { 
+  from { transform: rotate(0deg); } 
+  to { transform: rotate(360deg); }
+}
+
+.food-1{
+  background: url(../food_1.png) no-repeat center / cover;
+}
+
+.food-2{
+  background: url(../food_2.png) no-repeat center / cover;
+}
+.food-3{
+  background: url(../food_3.png) no-repeat center / cover;
+}
+
+footer{
+  margin-top: 20px;
+  align-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .food-offers-section, footer{
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  footer{
+    text-align: center;
+  }
+}
